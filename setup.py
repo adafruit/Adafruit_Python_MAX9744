@@ -1,9 +1,15 @@
-from ez_setup import use_setuptools
-use_setuptools()
+try:
+    # Try using ez_setup to install setuptools if not already installed.
+    from ez_setup import use_setuptools
+    use_setuptools()
+except ImportError:
+    # Ignore import error and assume Python 3 which already has setuptools.
+    pass
+
 from setuptools import setup, find_packages
 
 setup(name              = 'Adafruit_MAX9744',
-      version           = '1.0.1',
+      version           = '1.0.2',
       author            = 'Tony DiCola',
       author_email      = 'tdicola@adafruit.com',
       description       = 'Library for controlling the MAX9744 class D amplifier with I2C volume control on a Raspberry Pi or Beaglebone Black.',
