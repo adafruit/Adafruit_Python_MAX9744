@@ -8,8 +8,17 @@ except ImportError:
 
 from setuptools import setup, find_packages
 
+from codecs import open
+from os import path
+
+here = path.abspath(path.dirname(__file__))
+
+# Get the long description from the README file
+with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(name              = 'Adafruit_MAX9744',
-      version           = '1.0.2',
+      version           = '1.0.3',
       author            = 'Tony DiCola',
       author_email      = 'tdicola@adafruit.com',
       description       = 'Library for controlling the MAX9744 class D amplifier with I2C volume control on a Raspberry Pi or Beaglebone Black.',
@@ -17,4 +26,7 @@ setup(name              = 'Adafruit_MAX9744',
       url               = 'https://github.com/adafruit/Adafruit_Python_MAX9744/',
       dependency_links  = ['https://github.com/adafruit/Adafruit_Python_GPIO/tarball/master#egg=Adafruit-GPIO-0.9.0'],
       install_requires  = ['Adafruit-GPIO>=0.9.0'],
-      packages          = find_packages())
+      packages          = find_packages(),
+
+      long_description = long_description,
+      long_description_content_type = 'text/markdown')

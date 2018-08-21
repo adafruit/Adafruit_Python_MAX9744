@@ -1,4 +1,17 @@
-# Adafruit Python MAX9744
+# DEPRECATED LIBRARY Adafruit Python MAX9744
+
+This library has been deprecated!
+
+We are now only using our CircuitPython sensor libraries in Python.
+
+We are leaving the code up for historical/research purposes but archiving the
+repository.
+
+Check out this guide for using the MAX9744 with Python!
+
+https://learn.adafruit.com/adafruit-20w-stereo-audio-amplifier-class-d-max9744/python-circuitpython
+
+----
 
 Python library for controlling the MAX9744 class D amplifier with I2C volume
 control on a Raspberry Pi or BeagleBone Black.  Made to work with Adafruit's
