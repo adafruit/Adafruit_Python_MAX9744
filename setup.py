@@ -18,7 +18,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(name              = 'Adafruit_MAX9744',
-      version           = '1.0.3',
+      version           = '1.0.4',
       author            = 'Tony DiCola',
       author_email      = 'tdicola@adafruit.com',
       description       = 'Library for controlling the MAX9744 class D amplifier with I2C volume control on a Raspberry Pi or Beaglebone Black.',
